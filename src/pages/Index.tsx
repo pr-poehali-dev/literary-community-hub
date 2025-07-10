@@ -25,41 +25,50 @@ const Index = () => {
             </div>
             <nav className="hidden md:flex items-center gap-6">
               <a
-                href="#"
+                href="/almanacs"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Альманахи
               </a>
               <a
-                href="#"
+                href="/works"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Произведения
               </a>
               <a
-                href="#"
+                href="/contests"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Конкурсы
               </a>
               <a
-                href="#"
+                href="/authors"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Новости
+                Авторы
               </a>
               <a
-                href="#"
+                href="/chat"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Контакты
+                Чат
               </a>
             </nav>
             <div className="flex items-center gap-2">
-              <Button variant="outline" size="sm">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => (window.location.href = "/auth")}
+              >
                 Войти
               </Button>
-              <Button size="sm">Регистрация</Button>
+              <Button
+                size="sm"
+                onClick={() => (window.location.href = "/auth")}
+              >
+                Регистрация
+              </Button>
             </div>
           </div>
         </div>
